@@ -26,4 +26,6 @@
     - Tham số của hàm là `mutable`:
         - Các đối tượng `mutable` như `list`, `dict` cũng được truyền vào qua qua `reference`, tức là `địa chỉ vùng nhớ`, không khác gì các đối tượng `immutable` cả. Thế nhưng vì tính chất của `mutable`, nên vùng nhớ này hoàn toàn có thể chứa `giá trị mới` mà `không cần cấp phát` gì cả. Vì vậy, nếu một `mutable` được truyền vào hàm mà `bị thay đổi giá trị`, thì `biến bên ngoài` cũng sẽ `chứa giá trị mới`:
 
+- `index` và `find` là 2 `function` sử dụng tìm kiếm `substring` trong string. `index` trả về `exception` nếu không tìm thấy, còn `find` thì trả về `-1`.
 
+- `AssertionError` được `raise` bởi `assert` khi `executed`, vì vậy nó là điều kiện kích hoạt khi `False`
