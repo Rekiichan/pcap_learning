@@ -29,3 +29,28 @@
 - `index` và `find` là 2 `function` sử dụng tìm kiếm `substring` trong string. `index` trả về `exception` nếu không tìm thấy, còn `find` thì trả về `-1`.
 
 - `AssertionError` được `raise` bởi `assert` khi `executed`, vì vậy nó là điều kiện kích hoạt khi `False`
+
+- `<=`, `>=` không hỗ trợ `so sánh` số với chữ
+
+Trong Python, các `escape sequence` là một `chuỗi các ký tự` được sử dụng để biểu diễn một ký tự đặc biệt mà bạn `không thể nhập trực tiếp trong một chuỗi`. Chúng bắt đầu bằng một dấu gạch chéo ngược `(\)` theo sau là một hoặc nhiều ký tự, và cùng nhau biểu diễn một ký tự duy nhất trong chuỗi.
+
+Dưới đây là một số `escape sequence` phổ biến trong Python:
+
+- \n: Xuống dòng mới (newline).
+- \t: Tab ngang (horizontal tab).
+- \r: Trở về đầu dòng (carriage return).
+- \\: Dấu gạch chéo ngược (backslash) thực sự.
+- \': Dấu nháy đơn (single quote) - cho phép bạn đưa dấu nháy đơn vào trong chuỗi được bao quanh bởi dấu nháy đơn.
+- \": Dấu nháy kép (double quote) - cho phép bạn đưa dấu nháy kép vào trong chuỗi được bao quanh bởi dấu nháy kép.
+- \b: Backspace - xóa một ký tự.
+- \f: Formfeed - dùng trong việc in trang.
+- \ooo: Ký tự với giá trị octal "ooo".
+- \xhh: Ký tự với giá trị hex "hh".
+
+
+```python
+s = 'hello'
+s[0] = s[1]
+```
+- không thể `assign value` cho `str` vì nó là `immutable`
+
