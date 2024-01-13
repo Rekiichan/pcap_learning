@@ -54,3 +54,4 @@ s[0] = s[1]
 ```
 - không thể `assign value` cho `str` vì nó là `immutable`
 
+- exception custom của user có thể có hoặc không được kế thừa từ `exception gốc`
